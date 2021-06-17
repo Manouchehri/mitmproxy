@@ -21,13 +21,15 @@ Then, do the following:
 
 ```shell
 # 1) Verify that these commands work:
-python3 --version
-python3 -m pip --help
-python3 -m venv --help
+python3.8 --version
+python3.8 -m pip --help
+python3.8 -m venv --help
 # 2) Install:
 git clone https://github.com/mitmproxy/mitmproxy.git
 cd mitmproxy
-python3 -m venv venv
+python3.8 -m venv venv
+source venv/bin/activate
+pip install -U pip setuptools 
 venv/bin/pip install -e ".[dev]"
 ```
 
